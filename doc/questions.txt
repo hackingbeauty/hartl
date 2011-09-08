@@ -1,0 +1,2 @@
+1) is the email regex good enough?  can't you have numbers in an email
+addy?
