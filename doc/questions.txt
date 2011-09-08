@@ -44,3 +44,6 @@ the encrypted_password hash.  However, the salt must be stored in the
 database.  If someone gets a hold of the salt hash, they can hash that
 with the password they're guessing (rainbow attacked), and compare that
 with the encrypted_password hash (provided they got access to that too).
+
+6) confused in tests when use get :show vs get 'show' - is there a big
+difference?
