@@ -1,2 +1,7 @@
 1) is the email regex good enough?  can't you have numbers in an email
 addy?
+2) i found that self.encrypted_password = encrypt(self.password) more
+explicit and clear than self.encrypted_password = encrypt(password)
+3) remember what "secure one-way hashing" is
+4) why use User.new instead of User.create! in specs?
+
