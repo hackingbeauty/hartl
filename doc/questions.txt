@@ -47,3 +47,49 @@ with the encrypted_password hash (provided they got access to that too).
 
 6) confused in tests when use get :show vs get 'show' - is there a big
 difference?
+
+7) why use  post :create, :user => @attr
+vs get :show, :id => @user ?
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+8) fluently manipulaing data structures in ruby may be a weakness...hash
+of hashes...how do u create that?  an array of arrays...how do you
+create that?  how do you convert a hash to a json object? how do you
+convert an incoming json object to a hash? etc.
+
+9) why render when there is a an error in a form, and why redirect when
+the form is successfully submitted?
