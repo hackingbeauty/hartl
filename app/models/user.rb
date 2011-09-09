@@ -41,12 +41,13 @@ class User < ActiveRecord::Base
       self.encrypted_password = encrypt(self.password)
     end
 
+
     def encrypt(string)
       secure_hash("#{salt}--#{string}")
     end
 
     def make_salt
-      secure_hash("#{Time.now.utc}--#{password}")
+      secure_hash("#{Time.now.utc}--#{self.password}")
     end
 
     def secure_hash(string)

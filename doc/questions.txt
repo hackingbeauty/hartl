@@ -1,9 +1,13 @@
 1) is the email regex good enough?  can't you have numbers in an email
 addy?
+
 2) i found that self.encrypted_password = encrypt(self.password) more
 explicit and clear than self.encrypted_password = encrypt(password)
+
 3) remember what "secure one-way hashing" is
+
 4) why use User.new instead of User.create! in specs?
+
 5) so i understand if someone gets a hold of the encrypted_password
 hash, they can conduct a rainbow attack.  The way to circumvent this is
 to create a salt which is a hash of the password and a UTC timestamp.
@@ -20,7 +24,9 @@ the encrypted_password hash.  However, the salt must be stored in the
 database.  If someone gets a hold of the salt hash, they can hash that
 with the password they're guessing (rainbow attacked), and compare that
 with the encrypted_password hash (provided they got access to that
-too).5) so i understand if someone gets a hold of the encrypted_password
+too).
+
+5) so i understand if someone gets a hold of the encrypted_password
 hash, they can conduct a rainbow attack.  The way to circumvent this is
 to create a salt which is a hash of the password and a UTC timestamp.
 The salt is then hashed with the submitted hashed password which yields
@@ -36,14 +42,7 @@ the encrypted_password hash.  However, the salt must be stored in the
 database.  If someone gets a hold of the salt hash, they can hash that
 with the password they're guessing (rainbow attacked), and compare that
 with the encrypted_password hash (provided they got access to that
-too).5) so i understand if someone gets a hold of the encrypted_password
-hash, they can conduct a rainbow attack.  The way to circumvent this is
-to create a salt which is a hash of the password and a UTC timestamp.
-The salt is then hashed with the submitted hashed password which yields
-the encrypted_password hash.  However, the salt must be stored in the
-database.  If someone gets a hold of the salt hash, they can hash that
-with the password they're guessing (rainbow attacked), and compare that
-with the encrypted_password hash (provided they got access to that too).
+too).
 
 6) confused in tests when use get :show vs get 'show' - is there a big
 difference?
@@ -113,12 +112,12 @@ retrieval of the session's user?
 
 15) remember what short circuit evaluation is
 
-26) study this construct => User.authenticate_with_salt(*remember_token)
+16) study this construct => User.authenticate_with_salt(*remember_token)
 the * in front of remember_token allows you to insert a 2 element array
 into this method which gets split into 2 separate arguments which is
 what authenticate_with_salt is expecting
 
-27)  not clear on this construct ->
+17)  not clear on this construct ->
 cookies.signed[:remember_token] || [nil, nil]
 
 the answer is "The reason for this code is that the support for signed
